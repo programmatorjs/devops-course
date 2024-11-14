@@ -1,5 +1,4 @@
 #### 4. Вывести дату в unixtime. На вход команды `date` через пайп подать свой формат выводимой даты
 ```sh
-[root@dev-server ~] date +%s | xargs -I{} date -d @{} +"%Y-%m-%d"
-2024-11-08
+[root@dev-server ~] date -d "2024-01-01 00:00:00 UTC" +%s
 ```
