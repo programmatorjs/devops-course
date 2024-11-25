@@ -3,5 +3,5 @@
 ```sh
 [root@dev-server ~]# mkfifo /tmp/archive_pipe
 [root@dev-server ~]# tar czf /tmp/messages_archive.tar.gz -C /var/log messages < /tmp/archive_pipe &
-[root@dev-server ~]# cat /var/log/messages > /tmp/archive_pipe
+[root@dev-server ~]# echo "/var/log/messages" > /tmp/archive_pipe
 ```
